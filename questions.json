@@ -1,0 +1,46 @@
+[
+  {
+    "type": "experience",
+    "question": "What is your current experience?",
+    "options": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ]
+  },
+  {
+    "type": "injury",
+    "question": "Have you had an injury recently?",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "type": "injury-1",
+    "question": "How recent was your injury?",
+    "options": [
+      "0-3 Months",
+      "3-6 Months",
+      "Over 6 Months"
+    ]
+  },
+  {
+    "type": "stability",
+    "question": "What's your currently level of stability in the saddle?",
+    "options": [
+      "Low",
+      "Mid",
+      "High"
+    ]
+  },
+  {
+    "type": "stamina",
+    "question": "How strong are you?",
+    "options": [
+      "Weak",
+      "In-between",
+      "Strong"
+    ]
+  }
+]
