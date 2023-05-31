@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto auto;
+  background-color: #283f89;
+}
+
+.page {
+  margin: auto;
+}
+
+.intro, .giveaway {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px;
+  background: white;
+}
+
+.close {
+  align-self: right;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: smaller;
+  }
+  .box {
+    width: 95%;
+  }
+}
