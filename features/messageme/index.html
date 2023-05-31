@@ -11,41 +11,100 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background: linear-gradient(45deg, #283f89, #22588b)
+      background: linear-gradient(45deg, #283f89, #22588b);
+      height: 100vh;
     }
 
-    div {
-      height: 100vh;
-      width:100%;
+    header {
+      position:absolute;
+      width: 100%;
+      text-align: center;
+      font-family:sans-serif;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    /*Homepage*/
+    a.home {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      z-index: 10;
+    }
+    a.home:hover {
+      color: #f59a5e;
+    }
+
+    .relative {
       position: relative;
     }
-    
+
+    .absolute {
+      position: absolute;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .back-button {
+      text-align: center;
+      height: fit-content;
+      margin: 2rem 0;
+    }
+
+    .button-container {
+      margin: -2rem 0;
+      height: 100%;
+    }
+
     #button {
-      position:absolute;
       top: 50%;
       left: 50%;
-      transform:translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       background-color: #f59a5e;
       padding-top: 1rem;
       padding-bottom: 1rem;
-      padding-left:1.5rem;
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
       font-family: sans-serif;
       border-radius: 5px;
       user-select: none;
-      color:white;
-      font-size:large;
+      color: white;
+      font-size: large;
       cursor: pointer;
+    }
+
+    a {
       text-decoration: none;
     }
 
-    #button:hover{
+    #button:hover {
       background-color: #ec9f6b;
+    }
+
+    .back {
+      color: white;
+      background: #f59a5e;
+      padding: 7px 15px 7px 15px;
+      font-family: sans-serif;
+      border-radius: 5px;
     }
   </style>
   <body>
-    <div>
-      <a href="sms:+19738188088" id="button">Message Me</a>
-    </div>
+    <header>
+      <nav>
+        <h1><a class="home" href="/">IfaFit</a></h1>
+      </nav>
+    </header>
+    <main class="relative">
+      <div class="button-container relative">
+        <a href="sms:+19738188088" id="button" class="absolute">Message Me</a>
+      </div>
+    </main>
   </body>
 </html>
